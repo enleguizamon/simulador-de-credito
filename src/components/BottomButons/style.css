@@ -1,0 +1,21 @@
+.butonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  height: 11%;
+}
+
+.firstButon {
+  background-color: teal;
+  border-radius: 2px;
+  width: 18rem;
+  font-weight: 500;
+}
+
+.secondButon {
+  width: 9rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: rgb(4, 70, 109);
+}

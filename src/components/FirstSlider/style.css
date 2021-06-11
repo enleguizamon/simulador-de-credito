@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 28%;
+  width: 85%;
+  box-sizing: border-box;
+}
+
+.montoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondMontoContainer {
+  margin-top: -1rem;
+}
+
+.amount {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.input {
+  height: 2rem;
+  width: 7rem;
+  background-color: #012ba0;
+  border: 1.5px solid rgb(160, 160, 160);
+  color: white;
+  text-align: center;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.sliderContainer {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 80%;
+}
+

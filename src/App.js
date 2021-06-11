@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import FirstSlider from "./components/FirstSlider";
+import SecondSlider from "./components/SecondSlider";
+import BottomButons from "./components/BottomButons";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <h1 className="title">Simulá tu crédito</h1>
+        <FirstSlider/>
+        <SecondSlider />
+        <div className="feeContainer">
+        <p className="fee">CUOTA FIJA POR MES</p>
+        <p className="month">$algo</p>
+        </div>
+        <BottomButons />
+      </div>
     </div>
   );
 }
