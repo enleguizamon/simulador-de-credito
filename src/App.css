@@ -45,3 +45,9 @@
   font-size: 1.3rem;
   font-weight: 600;
 }
+
+.outOfLimit {
+  color: rgb(255, 14, 14);
+  font-size: 0.8rem;
+  text-align: end;
+}
