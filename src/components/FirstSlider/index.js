@@ -3,13 +3,13 @@ import Slider, { Range } from "rc-slider";
 import "rc-slider/assets/index.css";
 import { useState } from "react";
 
-function FirstSlider() {
+function FirstSlider(props) {
   //montos minimos, maximos totales y labels
   const minTotal = { value: 5000, label: "$5.000" };
   const maxTotal = { value: 50000, label: "$50.000" };
 
   //estado del input y slider
-  const [total, setTotal] = useState(minTotal.value);
+  //const [total, setTotal] = useState(minTotal.value);
 
   //configuracion del slider
   const style = {
@@ -25,16 +25,15 @@ function FirstSlider() {
     label: maxTotal.label,
   };
 
-  //cambia el valor de monto total dependiendo del input
+
   function handleInput(e) {
-    const inputValue = e.target.value;
-    setTotal(inputValue);
+    props.handleCallback(e.target.value);
   }
 
-  //cambia el valor de monto total dependiendo del slider
   function handleSlider(value) {
-    setTotal(value);
+    props.handleCallback(value);
   }
+
 
   return (
     <div className="wrapper">
@@ -46,7 +45,7 @@ function FirstSlider() {
           min={minTotal.value}
           max={maxTotal.value}
           className="input"
-          value={total}
+          value={props.total}
         />
       </div>
       <div className="sliderContainer">
@@ -55,7 +54,7 @@ function FirstSlider() {
           marks={marks}
           min={minTotal.value}
           max={maxTotal.value}
-          value={total}
+          value={props.total}
         />
       </div>
     </div>
