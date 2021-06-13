@@ -10,8 +10,7 @@ Ejercicio: Webapp para escuelita de React ASAP Consulting.
 - Agregué estilos usando css con flexbox
 - Árbol de componentes:
 App -> TotalAmount / Installment / BottomButons
-Cada componente tiene su index.js y style.css 
-- Agregué estilos usando css con flexbox
+Cada componente tiene su index.js y style.css
 
 ## link a versión deployada:
 https://simulador-de-credito-enleguizamon.vercel.app/
